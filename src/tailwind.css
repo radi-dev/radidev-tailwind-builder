@@ -662,6 +662,10 @@ video {
   z-index: -1;
 }
 
+.z-10{
+  z-index: 10;
+}
+
 .-ml-32{
   margin-left: -8rem;
 }
@@ -902,6 +906,14 @@ video {
   padding-inline-start: 8rem;
 }
 
+.pb-5{
+  padding-bottom: 1.25rem;
+}
+
+.pt-5{
+  padding-top: 1.25rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1022,6 +1034,14 @@ video {
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-\[4lvw\]{
+  font-size: 4lvw;
+}
+
+.text-\[min\(6xl\2c 5lvw\)\]{
+  font-size: min(6xl,5lvw);
 }
 
 .font-black{
