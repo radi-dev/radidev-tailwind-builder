@@ -783,6 +783,11 @@ video {
   width: max(20lvw,83px);
 }
 
+.translate-y-8{
+  --tw-translate-y: 2rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .-rotate-90{
   --tw-rotate: -90deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -818,6 +823,10 @@ video {
 
 .gap-5{
   gap: 1.25rem;
+}
+
+.gap-10{
+  gap: 2.5rem;
 }
 
 .text-wrap{
@@ -867,6 +876,11 @@ video {
   background-color: rgb(147 197 253 / var(--tw-bg-opacity, 1));
 }
 
+.bg-lime-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 249 157 / var(--tw-bg-opacity, 1));
+}
+
 .p-1{
   padding: 0.25rem;
 }
@@ -882,6 +896,10 @@ video {
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.ps-32{
+  padding-inline-start: 8rem;
 }
 
 .text-center{
@@ -991,6 +1009,21 @@ video {
   font-size: 40lvw;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .font-black{
   font-weight: 900;
 }
@@ -1025,10 +1058,48 @@ video {
   opacity: 0.5;
 }
 
+.opacity-90{
+  opacity: 0.9;
+}
+
+.opacity-70{
+  opacity: 0.7;
+}
+
+.opacity-0{
+  opacity: 0;
+}
+
 .shadow-2xl{
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.delay-100{
+  transition-delay: 100ms;
+}
+
+.delay-300{
+  transition-delay: 300ms;
+}
+
+.delay-500{
+  transition-delay: 500ms;
+}
+
+.delay-700{
+  transition-delay: 700ms;
+}
+
+.duration-700{
+  transition-duration: 700ms;
 }
 
 @theme {
