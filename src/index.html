@@ -8,7 +8,7 @@
   <!-- <link rel="stylesheet" href="./input.css" /> -->
 </head>
 
-<body>
+<body class="font-general">
 
   <!-- Background Lines -->
   <div class="fixed top-0 left-0 w-full h-lvh z-[-1] flex justify-around items-stretch bg-secondary">
@@ -19,10 +19,10 @@
     <div class="line"></div>
   </div>
 
-  <section>
-    <!-- Inline SVG logo-->
+  <section id="header">
     <div class="absolute top-5 left-[10vw] px-2  w-[80vw] flex justify-between">
-      <svg width="83" height="51" viewBox="0 0 83 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="w-[min(20lvw,83px)]">
+        <svg id="logo" viewBox="0 0 83 51" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M30.2764 0C36.0919 0 40.8066 4.71475 40.8066 10.5303V16.3926H40.8047C35.3685 16.3929 30.961 20.4705 30.9609 25.5C30.961 30.5295 35.3685 34.6071 40.8047 34.6074L40.8066 34.6064V44.7627C41.4501 48.1603 42.684 49.3837 45.6084 51H30.3799C30.3895 50.8354 30.3945 50.6697 30.3945 50.5029C30.3943 45.4735 25.987 41.3966 20.5508 41.3965C15.1147 41.3967 10.7073 45.4735 10.707 50.5029C10.707 50.6697 10.7131 50.8354 10.7227 51H0V0H30.2764ZM17.7764 6.04395C13.0652 6.04435 9.24525 9.57777 9.24512 13.9365C9.24522 18.2953 13.0652 21.8297 17.7764 21.8301C22.4879 21.8301 26.3075 18.2955 26.3076 13.9365C26.3075 9.57752 22.4879 6.04395 17.7764 6.04395Z"
           fill="url(#paint0_linear_1358_2663)" />
@@ -41,16 +41,41 @@
             <stop offset="0.394331" stop-color="#C5B596" />
           </linearGradient>
         </defs>
-      </svg>
+      </svg></div>
       <div class="text-bold text-light text-[2vw] opacity-50">RadiDev</div>
     </div>
   </section>
 
-
-  <!-- Home Section -->
-  <section id="home" class="w-full">
+  <section id="nav">
+    <!--Nav-->
     <div
-      class="w-full h-lvh text-primary font-sans font-black flex justify-around items-center absolute top-0 text-[20lvw]">
+      class="fixed flex flex-col left-[3lvw] text-light text-base font-extralight bottom-0 items-center  h-[60lvh]  justify-around gap-20">
+  
+      <div class="-rotate-90 aspect-square  items-center justify-center flex"><a href="#About">About</a></div>
+      <div class="-rotate-90 aspect-square items-center justify-center flex"><a href="#Projects">Projects</a>
+      </div>
+      <div class="-rotate-90 aspect-square items-center justify-center flex"><a href="#Contact">Contact</a>
+      </div>
+  
+      <div class="w-[0.5px] bg-primary h-full"></div>
+    </div>
+    <!--Socials-->
+    <div
+      class="fixed flex flex-col right-[3lvw] text-light text-base font-extralight bg-bl ack inset-y-64 items-center  h-[ 30lvh]  justify-around gap-5 rounded-md">
+  
+      <div class="-rotate-90 aspect-square  items-center justify-center flex"><a href="#About">About</a></div>
+      <div class="-rotate-90 aspect-square items-center justify-center flex"><a href="#Projects">Projects</a>
+      </div>
+      <div class="-rotate-90 aspect-square items-center justify-center flex"><a href="#Contact">Contact</a>
+      </div>
+  
+    </div>
+  </section>
+  
+  <section id="home" class="w-full h-[100lvh]">
+
+    <div
+      class="w-full inset-y-1/3 text-primary font-black flex justify-around items-center absolute t op-0 text-[20lvw]">
       <!-- Letters-->
       <div class="w-1/2"></div>
       <div class="text-center w-full">R</div>
@@ -58,30 +83,31 @@
       <div class="text-center w-full">D</div>
       <div class="text-center w-full">I</div>
       <div class="w-1/2"></div>
-<!--Description-->
-<div class="absolute left-[10lvw] md:left-[50lvw] top-3/4 w-[80lvw] md:w-[40lvw] text-base text-light font-light p-1">
-  Lorem ipsum,
-  dolor
-  sit amet
-  consectetur adipisicing elit. Architecto nemo deserunt eveniet nesciunt. Voluptas ea unde voluptates illo quasi
-  reprehenderit, aliquam quis nostrum provident laboriosam sequi minus. Minus, asperiores adipisci!</div>
-
-<!--Extras-->
-<div class="absolute bg-dark w-[20lvw] h-[20lvw] rounded-full z-[-1] opacity-20 shadow-2xl -ml-32"></div>
-<div
-  class="absolute flex flex-col left-[3lvw] text-light text-base font-extralight bottom-0 items-center  h-[60lvh]  justify-around gap-5">
-
-  <div class="-rotate-90 aspect-square  items-center justify-center flex"><a href="#About">About</a></div>
-  <div class="-rotate-90 aspect-square items-center justify-center flex"><a href="#Projects">Projects</a>
-  </div>
-  <div class="-rotate-90 aspect-square items-center justify-center flex"><a href="#Contact">Contact</a>
-  </div>
-
-  <div class="w-[0.5px] bg-primary h-full"></div>
-  <!-- <div class="w-[0.5px] bg-primary h-1/3"></div> -->
-</div>
-
     </div>
+    
+    <!--Greeting-->
+    <div class="absolute left-[10lvw] bottom-2/3 text-light font-light p-2">
+      <p>HELLO!</p>
+      <p>I AM</p>
+    </div>
+
+    <!--Description-->
+    <div
+      class="absolute left-[10lvw] md:left-[50lvw] top-2/3 w-[80lvw] md:w-[40lvw] lg:w-[20lvw] text-base text-light font-light p-1">
+      Lorem ipsum,
+      dolor
+      sit amet
+      consectetur adipisicing elit. Architecto nemo deserunt eveniet nesciunt. Voluptas ea unde voluptates illo quasi
+      reprehenderit, aliquam quis nostrum provident laboriosam sequi minus. Minus, asperiores adipisci!</div>
+
+    <!--Extras-->
+    <div class="absolute bg-dark w-[20lvw] h-[20lvw] rounded-full z-[-1] opacity-20 shadow-2xl -ml-32"></div>
+    <div
+      class="absolute bg-dark w-[20lvw] h-[20lvw] rounded-full z-[-1] opacity-20 shadow-2xl -ml-44 mt-12 left-1/2 top-1/3">
+    </div>
+
+
+
   </section>
 
 </body>
