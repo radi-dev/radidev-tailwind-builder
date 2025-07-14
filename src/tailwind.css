@@ -666,6 +666,10 @@ video {
   height: 100lvh;
 }
 
+.h-\[max\(20lvh\2c 20lvw\)\]{
+  height: max(20lvh,20lvw);
+}
+
 .w-1\/2{
   width: 50%;
 }
@@ -692,6 +696,10 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-\[max\(20lvh\2c 20lvw\)\]{
+  width: max(20lvh,20lvw);
 }
 
 .-rotate-90{
@@ -752,6 +760,11 @@ video {
 .bg-secondary{
   --tw-bg-opacity: 1;
   background-color: rgb(40 40 43 / var(--tw-bg-opacity, 1));
+}
+
+.bg-red-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(127 29 29 / var(--tw-bg-opacity, 1));
 }
 
 .p-1{
