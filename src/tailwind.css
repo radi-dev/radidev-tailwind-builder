@@ -862,17 +862,39 @@ video {
   --font-general: "Raleway", "ui-sans-serif", "system-ui", "sans-serif";
 }
 
+@media (min-width: 640px){
+  .sm\:left-\[50lvw\]{
+    left: 50lvw;
+  }
+
+  .sm\:w-\[40lvw\]{
+    width: 40lvw;
+  }
+}
+
 @media (min-width: 768px){
   .md\:left-\[50lvw\]{
     left: 50lvw;
   }
 
+  .md\:left-\[70lvw\]{
+    left: 70lvw;
+  }
+
   .md\:w-\[40lvw\]{
     width: 40lvw;
+  }
+
+  .md\:w-\[20lvw\]{
+    width: 20lvw;
   }
 }
 
 @media (min-width: 1024px){
+  .lg\:left-\[70lvw\]{
+    left: 70lvw;
+  }
+
   .lg\:w-\[20lvw\]{
     width: 20lvw;
   }
