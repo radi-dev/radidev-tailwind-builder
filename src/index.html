@@ -8,7 +8,7 @@
   <!-- <link rel="stylesheet" href="./input.css" /> -->
 </head>
 
-<body class="font-general text-2xl sm:text-xl">
+<body class="font-1 text-2xl sm:text-xl">
 
   <!-- Background Lines -->
   <div class="fixed top-0 left-0 w-full h-lvh z-[-1] flex justify-around items-stretch bg-secondary">
@@ -19,8 +19,7 @@
     <div class="line"></div>
   </div>
 
-  <header id="header">
-    <div class="absolute top-5 left-[10vw] px-2  w-[80vw] flex justify-between items-end">
+<header id="header" class="absolute top-5 left-[10vw] px-2  w-[80vw] flex justify-between items-end ">
       <div class="w-[min(20lvw,83px)] z-10">
         <svg id="logo" viewBox="0 0 83 51" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -43,10 +42,9 @@
         </defs>
       </svg></div>
       <div class="text-bold text-light text-[2vw] opacity-50">RadiDev</div>
-    </div>
   </header>
 
-  <nav id="nav">
+<nav id="nav" class="z-10">
     <!--Nav-->
     <div
       class="fixed flex flex-col left-[3lvw] text-light font-extralight bottom-0 items-center  h-[60lvh]  justify-around gap-10">
@@ -100,10 +98,23 @@
     </div>
   </nav>
 
-  <section id="home" class="w-full h-[100lvh]">
+  <!--Extras-->
+  <div class="fixed bg-dark w-[max(20lvh,20lvw)] h-[max(20lvh,20lvw)] rounded-full z-[-1] opacity-20 shadow-2xl -ml-32">
+  </div>
+  <div
+    class="fixed bg-dark w-[max(20lvh,20lvw)] h-[max(20lvh,20lvw)] rounded-full z-[-1] opacity-20 shadow-2xl -ml-32 mt-12 left-1/2 top-1/3">
+  </div>
 
-    <div
-      class="w-full inset-y-1/3 max-h-fit text-primary font-black flex justify-around items-center absolute text-[25lvw] ">
+  <!--Content-->
+
+  <section id="home" class="w-full absolute top-[15lvh] flex flex-col">
+
+    <!--Greeting-->
+    <div class="relative left-[10lvw] text-light font-black p-2 text-6xl font-2">
+      <p>HELLO!</p>
+      <p class="ps-32">I AM</p>
+    </div>
+    <div class="w-full text-primary font-black flex justify-around items-center text-[22vw] h-[20vw]">
       <!-- Letters-->
       <div class="w-1/2"></div>
       <div class="text-center w-full">R</div>
@@ -112,33 +123,22 @@
       <div class="text-center w-full">I</div>
       <div class="w-1/2"></div>
     </div>
-
-    <!--Greeting-->
-    <div class="absolute left-[10lvw] bottom-2/3 text-light font-black p-2  text-6xl">
-      <p>HELLO!</p>
-      <p class="ps-32">I AM</p>
-    </div>
-
     <!--Description-->
     <article
-      class="absolute left-[10lvw] sm:left-[50lvw] lg:left-[70lvw] top-2/3 pt-5 w-[80lvw] sm:w-[40lvw] lg:w-[20lvw] text-light font-light p-1">
+      class="relative left-[10lvw] sm:left-[50lvw] l g:left-[70lvw] top- 2/3 pt-5 w-[80lvw] sm:w-[40lvw] lg :w-[25lvw] text-light font-light p-1">
       Lorem ipsum,
       dolor
       sit amet
       consectetur adipisicing elit. Architecto nemo deserunt eveniet nesciunt. Voluptas ea unde voluptates illo quasi
-      reprehenderit, aliquam quis nostrum provident laboriosam sequi minus. Minus, asperiores adipisci!</article>
+      reprehenderit, aliquam quis nostrum provident laboriosam sequi minus. Minus, asperiores adipisci!
+      </article>
 
-    <!--Extras-->
-    <div
-      class="absolute bg-dark w-[max(20lvh,20lvw)] h-[max(20lvh,20lvw)] rounded-full z-[-1] opacity-20 shadow-2xl -ml-32">
-    </div>
-    <div
-      class="absolute bg-dark w-[max(20lvh,20lvw)] h-[max(20lvh,20lvw)] rounded-full z-[-1] opacity-20 shadow-2xl -ml-32 mt-12 left-1/2 top-1/3">
-    </div>
+
 
 
 
   </section>
+
 
 </body>
 
