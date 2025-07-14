@@ -661,6 +661,10 @@ video {
   height: 100lvh;
 }
 
+.h-\[30lvh\]{
+  height: 30lvh;
+}
+
 .w-1\/2{
   width: 50%;
 }
@@ -712,6 +716,10 @@ video {
 
 .items-stretch{
   align-items: stretch;
+}
+
+.justify-start{
+  justify-content: flex-start;
 }
 
 .justify-center{
