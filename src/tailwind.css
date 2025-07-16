@@ -661,8 +661,8 @@ video {
   height: 30lvh;
 }
 
-.h-\[60lvh\]{
-  height: 60lvh;
+.h-\[60dvh\]{
+  height: 60dvh;
 }
 
 .h-\[max\(20lvh\2c 20lvw\)\]{
